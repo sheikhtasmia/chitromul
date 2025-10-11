@@ -6,14 +6,12 @@ const OurDedication = () => {
         story: (
             <>
                 <p className="mb-4 text-gray-600 leading-relaxed">
-                    At <span className="font-semibold text-blue-600">Chitromul</span>, dedication is more than a value — it’s our very identity. Like roots that hold a tree steady and nurture its growth, our unwavering commitment fuels everything we do. We are devoted to nurturing creativity, telling meaningful stories, and building a platform where ideas take shape and flourish.
+                    Team ChitroMul is a group of passionate and talented individuals who come together to create stunning images and capture beautiful moments on your special day. Each team member brings
                 </p>
                 <p className="mb-4 text-gray-600 leading-relaxed">
-                    Every project we undertake is a reflection of that promise. We don’t just aim to complete tasks — we aim to craft impact. Our team pushes boundaries, embraces innovation, and dives deep into every detail with care and precision. This relentless pursuit of excellence is what transforms visions into reality and stories into movements.
+                    their unique skill set and perspective to the table, ensuring that every aspect of your wedding photography is covered. Every team member plays a critical role in bringing your vision to life. The team also includes skilled editors who work behind the scenes to enhance the images, create a cohesive story, and produce a final product that exceeds your expectations. With our wedding photography team by your side, you can rest assured that every moment of your special day will be captured flawlessly.
                 </p>
-                <p className="font-semibold text-blue-600">
-                    Chitromul is not just an organization — it’s a dedication to creativity, culture, and change.
-                </p>
+
             </>
         )
     };

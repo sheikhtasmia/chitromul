@@ -1,50 +1,50 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { FaFacebookF } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./OurFaces.css";
 
 const teamMembers = [
   {
-    name: "Arefin Rahman",
-    passion: "Portrait Photographer",
-    img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80",
+    name: "Sazzadul Bari",
+    passion: "Founder & Core Photographer",
+    img: "https://i.ibb.co/YBhcjdrv/Sazzadul-Bari.jpg",
+    fb: "https://www.facebook.com/sazzadul.bari.79/",
   },
   {
-    name: "Mehazabien Noor",
-    passion: "Visual Storyteller",
-    img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&q=80",
+    name: "Emin EmRan",
+    passion: "Co-Founder & Photographer",
+    img: "https://i.ibb.co/LDwDXTVZ/Emin-Em-Ran.jpg",
+    fb: "https://www.facebook.com/mgkemran/",
   },
   {
-    name: "Tanvir Hasan",
-    passion: "Creative Director",
-    img: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&q=80",
+    name: "Hafijur Rahman",
+    passion: "Cinematographer",
+    img: "https://i.ibb.co/1GryLPXX/Hafijur.jpg",
+    // fb: "https://facebook.com/",
   },
   {
-    name: "Rafa Rahman",
-    passion: "Documentary Photographer",
-    img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80",
-  },
-  {
-    name: "Nafis Alom",
-    passion: "Street Photographer",
-    img: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=600&q=80",
+    name: "Ariyan Khan Abir",
+    passion: "Chief Event Organizer",
+    img: "https://i.ibb.co/99Rj76z4/Ariyan-Khan-Abir.jpg",
+    // fb: "https://facebook.com/",
   },
 ];
 
 const OurFaces = () => {
   return (
-    <section className="py-24 bg-white px-4 sm:px-6 relative">
-      <div className="max-w-full mx-auto text-center">
-        <h1 className="text-2xl md:text-4xl font-semibold mb-4 text-gray-900">
+    <section className="py-24 bg-gradient-to-b from-white to-gray-100 px-4 sm:px-6 relative">
+      <div className="max-w-7xl mx-auto text-center">
+        <h1 className="text-3xl md:text-5xl font-semibold mb-4 text-gray-900">
           The Faces Behind <span className="text-blue-600">Chitromul</span> 📸
         </h1>
         <p className="text-lg text-gray-600 mb-16">
-          Meet the team shaping our vision.
+          Meet the creative minds shaping our vision.
         </p>
 
-        {/* --- Slider Container --- */}
+        {/* --- Swiper Container --- */}
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={30}
@@ -55,30 +55,40 @@ const OurFaces = () => {
             640: { slidesPerView: 2, spaceBetween: 20 },
             1024: { slidesPerView: 3, spaceBetween: 30 },
           }}
-          className="pb-44" // more bottom space for dots
+          className="pb-56" // extra bottom space for dots
         >
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="group shadow-lg transition-all duration-500 bg-white hover:shadow-2xl rounded-xl overflow-hidden relative">
-                {/* Image Container */}
-                <div className="relative overflow-hidden w-full" style={{ height: "420px" }}>
+              <div className="group bg-white shadow-md hover:shadow-2xl transition-all duration-500 rounded-2xl overflow-hidden relative">
+                {/* Image */}
+                <div className="relative w-full h-[580px] sm:h-[550px] md:h-[600px] overflow-hidden">
                   <img
                     src={member.img}
                     alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+                    className="w-full h-full object-cover object-center transition-transform duration-700 ease-in-out group-hover:scale-110"
                   />
 
-                  {/* Overlay for default state text slide-in */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-end pb-8 text-white bg-gradient-to-t from-black/60 via-black/30 to-transparent transition-all duration-700 translate-y-[100%] group-hover:translate-y-0">
-                    <h3 className="text-3xl font-bold mb-1">{member.name}</h3>
-                    <p className="text-lg font-light text-blue-300">
+                  {/* Overlay Slide Up */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-end pb-10 text-white bg-gradient-to-t from-black/70 via-black/40 to-transparent transition-all duration-700 translate-y-full group-hover:translate-y-0">
+                    <h3 className="text-2xl font-bold mb-1">{member.name}</h3>
+                    <p className="text-md font-light text-blue-300 mb-3">
                       {member.passion}
                     </p>
+                    <div className="flex gap-3">
+                      <a
+                        href={member.fb}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/20 rounded-full hover:bg-blue-600 transition"
+                      >
+                        <FaFacebookF className="text-white text-lg" />
+                      </a>
+                    </div>
                   </div>
                 </div>
 
-                {/* Hidden below text (default state) */}
-                <div className="p-5 bg-gray-100 text-center group-hover:opacity-0 transition-opacity duration-500">
+                {/* Card Info (default view) */}
+                <div className="p-5 bg-gray-50 text-center transition-opacity duration-500 group-hover:opacity-0">
                   <h3 className="text-xl font-semibold text-gray-900">
                     {member.name}
                   </h3>
@@ -88,8 +98,8 @@ const OurFaces = () => {
             </SwiperSlide>
           ))}
 
-          {/* Custom Pagination Element */}
-          <div className="swiper-pagination-custom  bottom-20 left-10 right-0 z-10 flex justify-center mt-32"></div>
+          {/* Custom Pagination */}
+          <div className="swiper-pagination-custom mt-10 mb-4 flex justify-center"></div>
         </Swiper>
       </div>
     </section>
