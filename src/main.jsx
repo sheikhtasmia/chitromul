@@ -11,6 +11,7 @@ import Mainlayout from './Layout/Mainlayout.jsx';
 import Home from './Components/Pages/Home/Home.jsx';
 import About from './Components/Pages/About/About.jsx';
 import Services from './Components/Pages/Services/Services.jsx';
+import Portfolio from './Components/Pages/Portfolio/Portfolio.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
       {
         path:"/services",
         element:<Services></Services>
+      },
+
+      {
+        path:"/portfolio",
+        element:<Portfolio></Portfolio>
       },
     ],
   },

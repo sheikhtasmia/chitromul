@@ -19,7 +19,7 @@ const FAQSection = () => {
         },
         {
             question: "Do you travel for shoots?",
-            answer: "Absolutely! We love destination photography and have traveled to over 20 countries. Travel costs are calculated based on location and include accommodation, transportation, and per diem expenses."
+            answer: "Absolutely! We love destination photography and have traveled to over our  countries. Travel costs are calculated based on location and include accommodation, transportation, and per diem expenses."
         },
         {
             question: "How long until we receive our photos?",
@@ -72,16 +72,16 @@ const FAQSection = () => {
                                 <div className="flex items-start space-x-4">
                                     {/* Question Number */}
                                     <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${openIndex === index
-                                            ? 'bg-gradient-to-br from-purple-500 to-pink-500 text-white'
-                                            : 'bg-gray-100 text-gray-600 group-hover:bg-purple-100 group-hover:text-purple-600'
+                                        ? 'bg-gradient-to-br from-purple-500 to-pink-500 text-white'
+                                        : 'bg-gray-100 text-gray-600 group-hover:bg-purple-100 group-hover:text-purple-600'
                                         }`}>
                                         {index + 1}
                                     </div>
 
                                     {/* Question Text */}
                                     <h3 className={`text-sm md:text-lg font-semibold transition-all duration-300 ${openIndex === index
-                                            ? 'text-purple-700'
-                                            : 'text-gray-800 group-hover:text-purple-600'
+                                        ? 'text-purple-700'
+                                        : 'text-gray-800 group-hover:text-purple-600'
                                         }`}>
                                         {faq.question}
                                     </h3>
@@ -121,7 +121,7 @@ const FAQSection = () => {
                                             {index === 3 && (
                                                 <div className="mt-4 flex items-center text-sm text-green-600">
                                                     <span className="mr-2">✈️</span>
-                                                    <span><strong>Popular destinations:</strong> Bali, Switzerland, Maldives</span>
+                                                    <span><strong>Popular destinations:</strong>Bangladeshi All district</span>
                                                 </div>
                                             )}
                                         </div>
