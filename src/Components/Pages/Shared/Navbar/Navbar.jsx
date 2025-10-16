@@ -566,7 +566,7 @@ const Navbar = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            <span>ENG</span>
+                          <Link to="/bookconsulation">  <span>Book Consultation</span></Link>
                             <motion.svg
                                 className="w-4 h-4"
                                 fill="none"

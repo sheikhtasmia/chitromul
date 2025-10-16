@@ -7,15 +7,16 @@ import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-const PortfolioBanner = () => {
+const ConsultationBanner = () => {
     // Tomar dewa banners data ekhane
     const banners = [
 
-        {
-            image: "https://i.ibb.co.com/cXsW0nZn/pexels-pixabay-274973.jpg",
-            title: "Portfolio",
-            text: "Transforming imagination into visually stunning realities."
-        }
+       {
+    image: "https://images.unsplash.com/photo-1619525459229-12265a1acca6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
+    title: "Book a Free Consultation",
+    text: "Let’s discuss your ideas and turn them into a powerful reality. Schedule a free consultation to discover how we can bring your vision to life.",
+    // button: "Book Now", // Optional if you want a button
+}
 
     ];
 
@@ -123,6 +124,6 @@ const PortfolioBanner = () => {
     );
 };
 
-export default PortfolioBanner;
+export default ConsultationBanner;
 
 

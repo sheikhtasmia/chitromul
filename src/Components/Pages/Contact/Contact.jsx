@@ -61,7 +61,7 @@ const Contact = () => {
                         </p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
                         {/* Left Section - Contact Info + Map */}
                         <motion.div
                             variants={containerVariants}
@@ -70,57 +70,7 @@ const Contact = () => {
                             viewport={{ once: true }}
                             className="space-y-8"
                         >
-                            {/* Info Cards */}
-                            <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                {/* Location */}
-                                <div className="bg-white/80 backdrop-blur-md border border-gray-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-                                    <div className="flex items-center mb-4">
-                                        <div className="bg-blue-100 p-3 rounded-xl">
-                                            <MapPin className="w-6 h-6 text-blue-600" />
-                                        </div>
-                                        <h3 className="ml-4 text-lg font-semibold text-gray-900">Our Location</h3>
-                                    </div>
-                                    <p className="text-gray-600 leading-relaxed">
-                                        South College Para<br />Tangail, Dhaka, Bangladesh
-                                    </p>
-                                </div>
-
-                                {/* Phone */}
-                                <div className="bg-white/80 backdrop-blur-md border border-gray-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-                                    <div className="flex items-center mb-4">
-                                        <div className="bg-green-100 p-3 rounded-xl">
-                                            <Phone className="w-6 h-6 text-green-600" />
-                                        </div>
-                                        <h3 className="ml-4 text-lg font-semibold text-gray-900">Phone</h3>
-                                    </div>
-                                    <p className="text-gray-600 leading-relaxed">+880 1778 974133</p>
-                                </div>
-
-                                {/* Email */}
-                                <div className="bg-white/80 backdrop-blur-md border border-gray-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-                                    <div className="flex items-center mb-4">
-                                        <div className="bg-yellow-100 p-3 rounded-xl">
-                                            <Mail className="w-6 h-6 text-yellow-600" />
-                                        </div>
-                                        <h3 className="ml-4 text-lg font-semibold text-gray-900">Email</h3>
-                                    </div>
-                                    <p className="text-gray-600 leading-relaxed">info@yourdomain.com</p>
-                                </div>
-
-                                {/* Working Hours */}
-                                <div className="bg-white/80 backdrop-blur-md border border-gray-100 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-                                    <div className="flex items-center mb-4">
-                                        <div className="bg-purple-100 p-3 rounded-xl">
-                                            <Clock className="w-6 h-6 text-purple-600" />
-                                        </div>
-                                        <h3 className="ml-4 text-lg font-semibold text-gray-900">Working Hours</h3>
-                                    </div>
-                                    <p className="text-gray-600 leading-relaxed">
-                                        Sat - Thu: 9:00 AM – 6:00 PM<br />
-                                        Friday: Closed
-                                    </p>
-                                </div>
-                            </motion.div>
+                    
 
                             {/* Map Section */}
                             <motion.div
