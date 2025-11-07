@@ -10,7 +10,7 @@ const OurPortfolio = () => {
     { id: 'All', name: 'All Albums', icon: '📚' },
     { id: 'Wedding', name: 'Wedding', icon: '💒' },
     { id: 'Portrait', name: 'Fashion & Portrait', icon: '👤' },
-    { id: 'Outdoor-indoor', name: 'Outdoor & Indoor ', icon: '💑' },
+    { id: 'PicFashionPortrait', name: 'Pic fashion Portrait ', icon: '💑' },
     { id: 'Food', name: 'Food & Product', icon: '🍕' },
     { id: 'Nature', name: 'Nature', icon: '🌄' },
 
@@ -85,26 +85,26 @@ const OurPortfolio = () => {
     },
 
 
-    //  out dorr and indoore
+    //  PicFashionPortrait
 
     {
       id: 21,
-      category: "Outdoor-indoor",
+      category: "PicFashionPortrait",
       image: "/Outdoor/20240203171237__MG_6468.jpg"
     },
     {
       id: 22,
-      category: "Outdoor-indoor",
+      category: "PicFashionPortrait",
       image: "/Outdoor/20240203171539__MG_6482.jpg"
     },
     {
       id: 23,
-      category: "Outdoor-indoor",
+      category: "PicFashionPortrait",
       image: "/Outdoor/IMG_1596.jpg"
     },
     {
       id: 24,
-      category: "Outdoor-indoor",
+      category: "PicFashionPortrait",
       image: "/Outdoor/DSC02184.jpg"
     },
 
