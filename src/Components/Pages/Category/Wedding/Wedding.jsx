@@ -1,16 +1,14 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import WeddingBanner from './WeddingBanner';
+import React from "react";
+import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import WeddingBanner from "./WeddingBanner";
 
-// JSON data for the images as provided in your comment
 const weddingImagesData = [
-    // Wedding Images
     { id: 1, category: "Wedding", image: "/Wedding/DSC00658.jpg" },
     { id: 2, category: "Wedding", image: "/Wedding/DSC00811.jpg" },
     { id: 3, category: "Wedding", image: "/Wedding/DSC03567.jpg" },
     { id: 4, category: "Wedding", image: "/Wedding/IMG_0420.JPG" },
-
-    // Post-Wedding Images
     { id: 5, category: "Post-Wedding", image: "/Post-wedding/DSC02428.jpg" },
     { id: 6, category: "Post-Wedding", image: "/Post-wedding/DSC02392.jpg" },
     { id: 7, category: "Post-Wedding", image: "/Post-wedding/DSC02450.jpg" },
@@ -18,13 +16,20 @@ const weddingImagesData = [
 ];
 
 const Wedding = () => {
-    // Separate the categories for easier styling and grouping (optional but helpful)
-    const weddingPhotos = weddingImagesData.filter(item => item.category === "Wedding");
-    const postWeddingPhotos = weddingImagesData.filter(item => item.category === "Post-Wedding");
+    const weddingPhotos = weddingImagesData.filter(
+        (i) => i.category === "Wedding"
+    );
+    const postWeddingPhotos = weddingImagesData.filter(
+        (i) => i.category === "Post-Wedding"
+    );
 
     const photoVariants = {
-        hidden: { opacity: 0, scale: 0.9 },
-        visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
+        hidden: { opacity: 0, scale: 0.95 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: { duration: 0.5, ease: "easeOut" },
+        },
     };
 
     const ImageGallery = ({ title, photos }) => (
@@ -33,7 +38,7 @@ const Wedding = () => {
                 {title} Gallery 💖
             </h2>
 
-            {/* Responsive Masonry Grid using Tailwind CSS columns */}
+            {/* Masonry-like responsive grid */}
             <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
                 {photos.map((photo, index) => (
                     <motion.div
@@ -41,14 +46,17 @@ const Wedding = () => {
                         variants={photoVariants}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.3 }}
-                        className="break-inside-avoid shadow-xl rounded-lg overflow-hidden cursor-pointer hover:shadow-2xl transition duration-300 transform hover:scale-[1.02]"
+                        viewport={{ once: true, amount: 0.2 }}
+                        className="break-inside-avoid overflow-hidden rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] bg-gray-100"
                     >
-                        <img
+                        <LazyLoadImage
                             src={photo.image}
-                            alt={`${photo.category} photo ${index + 1}`}
-                            // w-full makes the image responsive within its column
+                            alt={`${photo.category} ${index + 1}`}
+                            effect="blur"
+                            loading="lazy"
+                            decoding="async"
                             className="w-full h-auto object-cover"
+                            placeholderSrc="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Crect width='600' height='400' fill='%23f3f4f6'/%3E%3C/svg%3E"
                         />
                     </motion.div>
                 ))}
@@ -57,23 +65,12 @@ const Wedding = () => {
     );
 
     return (
-        <div className='bg-white'>
+        <div className="bg-white">
             <WeddingBanner />
-
             <div className="pt-10">
-                {/* Wedding Photos Section */}
-                <ImageGallery
-                    title="Main Wedding Day"
-                    photos={weddingPhotos}
-                />
-
-                {/* Post-Wedding Photos Section */}
-                <ImageGallery
-                    title="Post-Wedding & Couple Shoots"
-                    photos={postWeddingPhotos}
-                />
+                <ImageGallery title="Main Wedding Day" photos={weddingPhotos} />
+                <ImageGallery title="Post-Wedding & Couple Shoots" photos={postWeddingPhotos} />
             </div>
-
         </div>
     );
 };
