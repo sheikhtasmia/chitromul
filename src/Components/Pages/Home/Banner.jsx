@@ -8,131 +8,129 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Banner = () => {
-    // Tomar dewa banners data ekhane
-    const banners = [
-        {
-            image:
-                "https://i.ibb.co.com/Df5v8f0s/girl-photographer-with-old-camera-his-hands-stylish-fashionable-girl-photographer-city-street.jpg",
-            title: "Capturing Moments, Creating Memories",
-            text: "Discover breathtaking photography from around the world.",
-            // button: "View Portfolio", // ✅ Button will be rendered
-        },
-        {
-            image: "https://i.ibb.co.com/mFyXgp5Z/Whats-App-Image-2025-10-23-at-20-22-48-58528de1.jpg",
-            title: "Digital Art & Vision",
-            text: "Experience stunning visuals and creative perspectives.",
-            // button: "Explore Now", // ❌ Button will NOT be rendered
-        },
-        {
-            image: "https://i.ibb.co.com/7tpk75xq/474132766-1631361907751682-5561711067256710114-n.jpg",
-            title: "Travel & Lifestyle",
-            text: "Find your next adventure through our lenses.",
-            // button: "See Gallery", // ✅ Button will be rendered
-        },
-    ];
+  // Tomar dewa banners data ekhane
+  const banners = [
+    {
+      image: "/banner/banner_01.webp",
+      title: "Capturing Moments, Creating Memories",
+      text: "Discover breathtaking photography from around the world.",
+      // button: "View Portfolio", // ✅ Button will be rendered
+    },
+    {
+      image: "/banner/banner_02.webp",
+      title: "Digital Art & Vision",
+      text: "Experience stunning visuals and creative perspectives.",
+      // button: "Explore Now", // ❌ Button will NOT be rendered
+    },
+    {
+      image: "/banner/banner_03.webp",
+      title: "Travel & Lifestyle",
+      text: "Find your next adventure through our lenses.",
+      // button: "See Gallery", // ✅ Button will be rendered
+    },
+  ];
 
-    return (
-        <div className="relative w-full h-screen overflow-hidden" id="home">
-            {/* 1. Swiper instance setup */}
-            <Swiper
-                spaceBetween={0}
-                centeredSlides
-                // Autoplay set kora holo 5000ms (5 second)
-                autoplay={{ delay: 5000, disableOnInteraction: false }}
-                // Smooth transition er jonyo speed barano holo (1 second)
-                speed={1000}
-                pagination={{ clickable: true }}
-                // Navigation custom button er class use kora holo
-                navigation={{
-                    nextEl: '.swiper-button-next-custom',
-                    prevEl: '.swiper-button-prev-custom',
-                }}
-                modules={[Autoplay, Pagination, Navigation]}
-                className="w-full h-full bannerSwiper"
-            >
-                {/* 2. Swiper Slides Mapping */}
-                {banners.map((item, index) => (
-                    <SwiperSlide key={index}>
-                        <div className="relative w-full h-full">
-                            {/* ✅ Image Layer */}
-                            <img
-                                src={item.image}
-                                alt={item.title}
-                                className="w-full h-full object-cover object-center transition-transform duration-1000 ease-in-out hover:scale-105"
-                            />
+  return (
+    <div className="relative w-full h-screen overflow-hidden" id="home">
+      {/* 1. Swiper instance setup */}
+      <Swiper
+        spaceBetween={0}
+        centeredSlides
+        // Autoplay set kora holo 5000ms (5 second)
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        // Smooth transition er jonyo speed barano holo (1 second)
+        speed={1000}
+        pagination={{ clickable: true }}
+        // Navigation custom button er class use kora holo
+        navigation={{
+          nextEl: ".swiper-button-next-custom",
+          prevEl: ".swiper-button-prev-custom",
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="w-full h-full bannerSwiper"
+      >
+        {/* 2. Swiper Slides Mapping */}
+        {banners.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="relative w-full h-full">
+              {/* ✅ Image Layer */}
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover object-center transition-transform duration-1000 ease-in-out hover:scale-105"
+              />
 
-                            {/* ✅ Overlay Layer and Text Content */}
-                            <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
-                                <h2 className="text-2xl md:text-5xl lg:text-6xl font-extrabold mb-4  tracking-tight shadow-text">
-                                    {item.title}
-                                </h2>
-                                <p className="text-sm md:text-xl lg:text-2xl max-w-3xl font-light mb-8  opacity-90">
-                                    {item.text}
-                                </p>
-                                {/* 🌟 Conditional Button Rendering 🌟 */}
-                                {item.button && (
-                                    <button className="px-10 py-4 bg-white text-black font-bold text-lg uppercase tracking-wider rounded-full shadow-lg transition-all duration-300 hover:bg-blue-500 hover:text-white transform hover:scale-105">
-                                        {item.button}
-                                    </button>
-                                )}
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-
-            {/* 3. Custom Navigation Buttons (Modern Design) */}
-            {/* Aage er theke aro modern and better navigation buttons add kora holo jate 'real' button feel ashe */}
-            <div className="swiper-button-prev-custom absolute top-1/2 left-4 z-10 -translate-y-1/2 cursor-pointer p-4 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full transition-all duration-300 shadow-2xl opacity-70 hover:opacity-100">
-                <ChevronLeft className="w-6 h-6 text-white" />
+              {/* ✅ Overlay Layer and Text Content */}
+              <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center px-4">
+                <h2 className="text-2xl md:text-5xl lg:text-6xl font-extrabold mb-4  tracking-tight shadow-text">
+                  {item.title}
+                </h2>
+                <p className="text-sm md:text-xl lg:text-2xl max-w-3xl font-light mb-8  opacity-90">
+                  {item.text}
+                </p>
+                {/* 🌟 Conditional Button Rendering 🌟 */}
+                {item.button && (
+                  <button className="px-10 py-4 bg-white text-black font-bold text-lg uppercase tracking-wider rounded-full shadow-lg transition-all duration-300 hover:bg-blue-500 hover:text-white transform hover:scale-105">
+                    {item.button}
+                  </button>
+                )}
+              </div>
             </div>
-            <div className="swiper-button-next-custom absolute top-1/2 right-4 z-10 -translate-y-1/2 cursor-pointer p-4 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full transition-all duration-300 shadow-2xl opacity-70 hover:opacity-100">
-                <ChevronRight className="w-6 h-6 text-white" />
-            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-            {/* 4. Custom Styling for Swiper and Buttons */}
-            <style jsx global>{`
-                /* Default Swiper icons hide kora holo */
-                .bannerSwiper .swiper-button-prev:after,
-                .bannerSwiper .swiper-button-next:after {
-                    content: '';
-                    font-size: 0;
-                }
+      {/* 3. Custom Navigation Buttons (Modern Design) */}
+      {/* Aage er theke aro modern and better navigation buttons add kora holo jate 'real' button feel ashe */}
+      <div className="swiper-button-prev-custom absolute top-1/2 left-4 z-10 -translate-y-1/2 cursor-pointer p-4 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full transition-all duration-300 shadow-2xl opacity-70 hover:opacity-100">
+        <ChevronLeft className="w-6 h-6 text-white" />
+      </div>
+      <div className="swiper-button-next-custom absolute top-1/2 right-4 z-10 -translate-y-1/2 cursor-pointer p-4 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full transition-all duration-300 shadow-2xl opacity-70 hover:opacity-100">
+        <ChevronRight className="w-6 h-6 text-white" />
+      </div>
 
-                /* Custom button gulor icon styling remove kora holo, karon ekhon amra 'lucide-react' icons use korchi */
-                .swiper-button-prev-custom:after,
-                .swiper-button-next-custom:after {
-                    content: none; 
-                }
+      {/* 4. Custom Styling for Swiper and Buttons */}
+      <style jsx global>{`
+        /* Default Swiper icons hide kora holo */
+        .bannerSwiper .swiper-button-prev:after,
+        .bannerSwiper .swiper-button-next:after {
+          content: "";
+          font-size: 0;
+        }
 
-                /* Prev/Next button positions adjust kora holo jodi chaowa hoy */
-                .bannerSwiper .swiper-button-prev-custom {
-                    left: 20px;
-                }
-                .bannerSwiper .swiper-button-next-custom {
-                    right: 20px;
-                }
+        /* Custom button gulor icon styling remove kora holo, karon ekhon amra 'lucide-react' icons use korchi */
+        .swiper-button-prev-custom:after,
+        .swiper-button-next-custom:after {
+          content: none;
+        }
 
-                /* Pagination (Dots) Styling - same as before, clean and modern */
-                .bannerSwiper .swiper-pagination-bullet-active {
-                    background: #3b82f6 !important; 
-                    width: 12px;
-                    height: 12px;
-                }
-                .bannerSwiper .swiper-pagination-bullet {
-                    background: white; 
-                    opacity: 0.7;
-                    transition: all 0.3s;
-                }
+        /* Prev/Next button positions adjust kora holo jodi chaowa hoy */
+        .bannerSwiper .swiper-button-prev-custom {
+          left: 20px;
+        }
+        .bannerSwiper .swiper-button-next-custom {
+          right: 20px;
+        }
 
-                /* Extra Text Shadow */
-                .shadow-text {
-                    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-                }
+        /* Pagination (Dots) Styling - same as before, clean and modern */
+        .bannerSwiper .swiper-pagination-bullet-active {
+          background: #3b82f6 !important;
+          width: 12px;
+          height: 12px;
+        }
+        .bannerSwiper .swiper-pagination-bullet {
+          background: white;
+          opacity: 0.7;
+          transition: all 0.3s;
+        }
 
-            `}</style>
-        </div>
-    );
+        /* Extra Text Shadow */
+        .shadow-text {
+          text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+      `}</style>
+    </div>
+  );
 };
 
 export default Banner;
