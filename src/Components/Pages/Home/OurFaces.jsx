@@ -6,37 +6,35 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const teamMembers = [
-  
-
   {
     name: "Emin EmRan",
     passion: " Photographer",
-    img: "/Team members/Emin EmRan.jpg",
+    img: "/Team members/Emin EmRan.webp",
     fb: "https://www.facebook.com/mgkemran/",
   },
 
   {
     name: "Rohim Badsha",
     passion: "Cinematographer & Video Editor",
-    img: "/Team members/Rohim Badsha.jpg",
+    img: "/Team members/Rohim Badsha.webp",
     // fb: "https://www.facebook.com/sazzadul.bari.79/",
   },
   {
     name: "Sazzadul Bari",
     passion: "Founder & Core Photographer",
-    img: "/Team members/Sazzadul Bari.jpg",
+    img: "/Team members/Sazzadul Bari.webp",
     fb: "https://www.facebook.com/sazzadul.bari.79/",
   },
 
   {
     name: "Hafijur Rahman",
     passion: "Cinematographer",
-    img: "/Team members/Hafijur.jpg",
+    img: "/Team members/Hafijur.webp",
   },
   {
     name: "Ariyan Khan Abir",
     passion: "Chief Event Organizer",
-    img: "/Team members/Ariyan Khan Abir.jpg",
+    img: "/Team members/Ariyan Khan Abir.webp",
   },
 ];
 

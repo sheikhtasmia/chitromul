@@ -4,55 +4,55 @@ const LatestWork = () => {
   const latestWork = [
     {
       id: 1,
-      image: "/latestwork/DSC00811.jpg",
+      image: "/latestwork/DSC00811.webp",
       category: "Wedding",
       type: "Photography",
     },
     {
       id: 2,
-      image: "/latestwork/DSC02392.jpg",
+      image: "/latestwork/DSC02392.webp",
       category: "Wedding",
       type: "Photography",
     },
     {
       id: 3,
-      image: "/latestwork/DSC02471.jpg",
+      image: "/latestwork/DSC02471.webp",
       category: "Wedding",
       type: "Photography",
     },
     {
       id: 5,
-      image: "/latestwork/DSC02889.jpg",
+      image: "/latestwork/DSC02889.webp",
       category: "Outdoor",
       type: "Photography",
     },
     {
       id: 6,
-      image: "/latestwork/DSC02975.jpg",
+      image: "/latestwork/DSC02975.webp",
       category: "Outdoor",
       type: "Photography",
     },
     {
       id: 7,
-      image: "/latestwork/DSC08914.jpg",
+      image: "/latestwork/DSC08914.webp",
       category: "Outdoor",
       type: "Photography",
     },
     {
       id: 8,
-      image: "/latestwork/IMG_2078.jpg",
+      image: "/latestwork/IMG_2078.webp",
       category: "Wedding",
       type: "Photography",
     },
     {
       id: 9,
-      image: "/latestwork/IMG_2308.JPG",
+      image: "/latestwork/IMG_2308.webp",
       category: "Wedding",
       type: "Photography",
     },
     {
       id: 10,
-      image: "/latestwork/IMG_3174.jpg",
+      image: "/latestwork/IMG_3174.webp",
       category: "Outdoor",
       type: "Photography",
     },
@@ -87,7 +87,9 @@ const LatestWork = () => {
                 decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/30 to-transparent flex flex-col justify-end p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <h3 className="text-white text-xl font-bold mb-1">{work.title || work.category}</h3>
+                <h3 className="text-white text-xl font-bold mb-1">
+                  {work.title || work.category}
+                </h3>
                 <span className="mt-2 inline-block px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full self-start">
                   {work.type}
                 </span>
