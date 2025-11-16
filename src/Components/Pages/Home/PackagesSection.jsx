@@ -1,24 +1,22 @@
 import React, { useState } from 'react';
 
 // regular packages
-import regular1 from "../../../../public/Packages-regular/01.jpg"
-import regular2 from "../../../../public/Packages-regular/02.jpg"
-import regular3 from "../../../../public/Packages-regular/03.jpg"
-import regular4 from "../../../../public/Packages-regular/04.jpg"
+import regular1 from "../../../../public/Packages-regular/5.jpeg"
+import regular2 from "../../../../public/Packages-regular/6.jpeg"
+
 
 // premium packages
-import premium1 from "../../../../public/Packages Premium/01.jpg"
-import premium2 from "../../../../public/Packages Premium/02.jpg"
-import premium3 from "../../../../public/Packages Premium/03.jpg"
-import premium4 from "../../../../public/Packages Premium/04.jpg"
+import premium1 from "../../../../public/Packages Premium/5.jpeg"
+import premium2 from "../../../../public/Packages Premium/6.jpeg"
+
 
 // outdoor packages
 import outdoorPackages1 from "../../../../public/Packages Outdoor/1.jpg"
 import outdoorPackages2 from "../../../../public/Packages Outdoor/2.jpg"
 import outdoorPackages3 from "../../../../public/Packages Outdoor/3.jpg"
 
-const regularImages = [regular1, regular2, regular3, regular4];
-const premiumImages = [premium1, premium2, premium3, premium4];
+const regularImages = [regular1, regular2, ];
+const premiumImages = [premium1, premium2, ];
 const outdoorImages = [outdoorPackages1, outdoorPackages2, outdoorPackages3];
 
 const ImageModal = ({ src, alt, onClose }) => {
