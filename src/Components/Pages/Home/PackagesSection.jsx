@@ -11,9 +11,9 @@ import premium2 from "../../../../public/Packages Premium/6.jpeg"
 
 
 // outdoor packages
-import outdoorPackages1 from "../../../../public/Packages Outdoor/1.jpg"
-import outdoorPackages2 from "../../../../public/Packages Outdoor/2.jpg"
-import outdoorPackages3 from "../../../../public/Packages Outdoor/3.jpg"
+import outdoorPackages1 from "../../../../public/Packages Outdoor/1.webp"
+import outdoorPackages2 from "../../../../public/Packages Outdoor/2.webp"
+import outdoorPackages3 from "../../../../public/Packages Outdoor/3.webp"
 
 const regularImages = [regular1, regular2, ];
 const premiumImages = [premium1, premium2, ];
