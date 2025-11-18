@@ -12,6 +12,16 @@ const liveEventImages = [
   { id: 6, src: "/LiveEvent/cultural6.webp", alt: "Street Performance" },
   { id: 7, src: "/LiveEvent/cultural7.webp", alt: "Cultural Parade" },
   { id: 8, src: "/LiveEvent/cultural8.webp", alt: "Live Orchestra" },
+  { id: 9, src: "/LiveEvent/cultural9.webp", alt: "Traditional Dance Performance" },
+  { id: 10, src: "/LiveEvent/cultural10.webp", alt: "Music Concert Stage" },
+  { id: 11, src: "/LiveEvent/cultural11.webp", alt: "Festival Crowd View" },
+  { id: 12, src: "/LiveEvent/cultural12.webp", alt: "Live Drama Show" },
+  { id: 13, src: "/LiveEvent/cultural13.webp", alt: "Art Exhibition Booth" },
+  { id: 14, src: "/LiveEvent/cultural14.webp", alt: "Street Performance" },
+  { id: 15, src: "/LiveEvent/cultural15.webp", alt: "Cultural Parade" },
+  { id: 16, src: "/LiveEvent/cultural16.webp", alt: "Live Orchestra" },
+  { id: 17, src: "/LiveEvent/cultural17.webp", alt: "Cultural Parade" },
+  { id: 18, src: "/LiveEvent/cultural18.webp", alt: "Live Orchestra" },
 ];
 
 // --- Component: Empty Gallery Message ---
