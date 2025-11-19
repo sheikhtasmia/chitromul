@@ -18,17 +18,17 @@ const eventManagementImages = [
   },
   {
     id: 4,
-    src: "/EventManage/IMG-20250514-WA0010.webp",
+    src: "/EventManage/event1.webp",
     alt: "Concert Crowd View",
   },
   {
     id: 5,
-    src: "/EventManage/IMG-20250514-WA0024.webp",
+    src: "/EventManage/event2.webp",
     alt: "Birthday Party Decoration",
   },
   {
     id: 6,
-    src: "/EventManage/IMG-20250514-WA0029.webp",
+    src: "/EventManage/event3.webp",
     alt: "Gala Dinner Table Setting",
   },
   {
@@ -40,6 +40,41 @@ const eventManagementImages = [
     id: 8,
     src: "/EventManage/IMG-20250514-WA0037.jpg",
     alt: "Outdoor Festival Setup",
+  },
+  {
+    id: 9,
+    src: "/EventManage/event4.webp",
+    alt: "Gala Dinner Table Setting",
+  },
+  {
+    id: 10,
+    src: "/EventManage/event5.webp",
+    alt: "weeding",
+  },
+  {
+    id: 11,
+    src: "/EventManage/event6.webp",
+    alt: "event",
+  },
+  {
+    id: 12,
+    src: "/EventManage/event7.webp",
+    alt: "event",
+  },
+  {
+    id: 13,
+    src: "/EventManage/event8.webp",
+    alt: "Gala Dinner Table Setting",
+  },
+  {
+    id: 14,
+    src: "/EventManage/event9.webp",
+    alt: "Gala Dinner Table Setting",
+  },
+  {
+    id: 15,
+    src: "/EventManage/event10.webp",
+    alt: "Gala Dinner Table Setting",
   },
 ];
 
