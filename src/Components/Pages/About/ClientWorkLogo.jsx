@@ -6,13 +6,17 @@ const ClientWorkLogo = () => {
 
     // Define the client logos with public paths and company names
     const clientLogos = [
-        { id: 1, src: '/clientworks/Chiklee Resort And Convention Center.jpg', alt: 'Chiklee Resort And Convention Center' },
-        { id: 2, src: '/clientworks/Daily Intizar.jpg', alt: 'Daily Intizar Newspaper' },
-        { id: 3, src: '/clientworks/Kureghor.jpg', alt: 'Kureghor Band' },
-        { id: 4, src: '/clientworks/MBSTU_logo.png', alt: 'MBSTU University' },
-        { id: 5, src: '/clientworks/ছায়া নীড়.png', alt: 'Chhaya Nir Community' },
-        { id: 6, src: '/clientworks/VBD.jpg', alt: 'Volunteer for Bangladesh' },
+        { id: 1, src: '/clientworks/MBSTU_logo.png', alt: 'MBSTU University' },
+        { id: 2, src: '/clientworks/ছায়া নীড়.png', alt: 'Chhaya Nir Community' },
+        { id: 3, src: '/clientworks/3.png', alt: 'Chhaya Nir Community' },
+        { id: 4, src: '/clientworks/4.png', alt: 'Chhaya Nir Community' },
+        { id: 5, src: '/clientworks/5.png', alt: 'Chhaya Nir Community' },
+        { id: 6, src: '/clientworks/Kureghor.jpg', alt: 'Kureghor Band' },
         { id: 7, src: '/clientworks/New.jpg.jpg', alt: 'BGIFT Institute of Science & Technology' },
+        { id: 8, src: '/clientworks/Chiklee Resort And Convention Center.jpg', alt: 'Chiklee Resort And Convention Center' },
+        { id: 9, src: '/clientworks/Daily Intizar.jpg', alt: 'Daily Intizar Newspaper' },
+        { id: 10, src: '/clientworks/VBD.jpg', alt: 'Volunteer for Bangladesh' },
+        { id: 11, src: '/clientworks/11.png', alt: 'Chhaya Nir Community' },
     ];
 
     // Framer Motion variant for simple, static entrance
