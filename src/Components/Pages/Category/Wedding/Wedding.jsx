@@ -9,6 +9,10 @@ const weddingImagesData = [
   { id: 2, category: "Wedding", image: "/Wedding/DSC00811.webp" },
   { id: 3, category: "Wedding", image: "/Wedding/DSC03567.webp" },
   { id: 4, category: "Wedding", image: "/Wedding/IMG_0420.webp" },
+  { id: 9, category: "Wedding", image: "/Wedding/wedd1.webp" },
+  { id: 10, category: "Wedding", image: "/Wedding/wedd2.webp" },
+  { id: 11, category: "Wedding", image: "/Wedding/wedd3.webp" },
+  { id: 12, category: "Wedding", image: "/Wedding/wedd4.webp" },
 
   // Post-Wedding Images
   { id: 5, category: "Post-Wedding", image: "/Post-wedding/DSC02428.webp" },
