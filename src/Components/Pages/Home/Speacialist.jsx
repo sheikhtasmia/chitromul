@@ -76,7 +76,7 @@ const Specialist = () => {
                 whileHover="hover"
               >
                 <motion.img
-                  src="public/Wedding/wedd2.webp"
+                  src="/Wedding/wedd2.webp"
                   alt="Wedding & Events Photography"
                   className="w-full h-full object-cover"
                   whileHover={{ scale: 1.1 }}
