@@ -25,7 +25,11 @@ const teamMembers = [
     img: "/Team members/Sazzadul Bari.webp",
     fb: "https://www.facebook.com/sazzadul.bari.79/",
   },
-
+  {
+    name: "Taskin Ahmed Anik",
+    passion: "Core Cinematographer & Video editor",
+    img: "/Team members/taskin.webp",
+  },  
   {
     name: "Hafijur Rahman",
     passion: "Cinematographer",
