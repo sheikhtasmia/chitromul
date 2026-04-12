@@ -17,7 +17,7 @@ import premium4 from "../../../../public/Packages Premium/11.webp"
 // outdoor packages
 import outdoorPackages1 from "../../../../public/package-outdoor/1.webp"
 import outdoorPackages2 from "../../../../public/package-outdoor/2.webp"
-import outdoorPackages3 from "../../../../public/package-outdoor/3.webp"
+
 
 const regularImages = [regular1, regular2,regular3, regular4,];
 const premiumImages = [premium1, premium2,premium3, premium4,];
