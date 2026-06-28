@@ -9,7 +9,7 @@ const ClientWorkLogo = () => {
         { id: 1, src: '/clientworks/MBSTU_logo.png', alt: 'MBSTU University' },
         { id: 2, src: '/clientworks/5.jpg', alt: 'Bindhubashini' },
         { id: 3, src: '/clientworks/3.png', alt: 'Tangail Girl College' },
-        { id: 4, src: '/clientworks/4.jpg', alt: 'Kudumbini College' },
+        { id: 4, src: '/clientworks/4.jpg', alt: 'Kumodini College' },
         { id: 5, src: '/clientworks/2.jpg', alt: 'বিবেকানন্দ হাইস্কুল এন্ড কলেজ' },
         { id: 6, src: '/clientworks/Kureghor.jpg', alt: 'Kureghor Band' },
         { id: 7, src: '/clientworks/New.jpg.jpg', alt: 'BGIFT Institute of Science & Technology' },
