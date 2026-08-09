@@ -27,6 +27,17 @@ const weddingImagesData = [
   { id: 4, category: "Wedding", image: "/Wedding/29.webp" },
   { id: 9, category: "Wedding", image: "/Wedding/30.webp" },
   { id: 10, category: "Wedding", image: "/Wedding/31.webp" },
+  { id: 4, category: "Wedding", image: "/Wedding/n1.webp" },
+  { id: 9, category: "Wedding", image: "/Wedding/n2.webp" },
+  { id: 10, category: "Wedding", image: "/Wedding/n3.webp" },
+  { id: 11, category: "Wedding", image: "/Wedding/n4.webp" },
+  { id: 2, category: "Wedding", image: "/Wedding/n5.webp" },
+  { id: 3, category: "Wedding", image: "/Wedding/n6.webp" },
+  { id: 4, category: "Wedding", image: "/Wedding/n7.webp" },
+  { id: 9, category: "Wedding", image: "/Wedding/n8.webp" },
+  { id: 10, category: "Wedding", image: "/Wedding/n9.webp" },
+    { id: 9, category: "Wedding", image: "/Wedding/n10.webp" },
+  { id: 10, category: "Wedding", image: "/Wedding/n11.webp" },
 
   // Post-Wedding Images
   { id: 5, category: "Post-Wedding", image: "/Post-wedding/DSC02428.webp" },
